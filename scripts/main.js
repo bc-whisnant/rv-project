@@ -197,7 +197,7 @@ function getInstallationProList() {
   var numberOfDealers = dealersListInstallationPros.length;
   
   numberOfDealersParagraph.innerHTML = `
-        ${numberOfDealers} dealers in 28226;
+        ${numberOfDealers} dealers in 28226
     `;
     //create divs here
     var section0 = document.querySelector('.section0');
@@ -217,13 +217,13 @@ function getInstallationProList() {
         <div class="sectionHeadingBorder">
         </div>
         <div class="sectionPhone">
-            <h2>${section0Phone}</h2>
+            <h2><i class="fas fa-phone-square"></i>&nbsp;${section0Phone}</h2>
         </div>
         <div class="sectionMessage">
             <p>${section0Message}</p>
         </div>
         <div class="sectionMail">
-          <a href="mailto:${section0Email}">Contact this Pro</a>
+          <a href="mailto:${section0Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
         </div>
         <div class="sectionHours">
           <p>${section0HoursText}</p>
@@ -250,13 +250,13 @@ function getInstallationProList() {
           <div class="sectionHeadingBorder">
           </div>
           <div class="sectionPhone">
-              <h2>${section1Phone}</h2>
+              <h2><i class="fas fa-phone-square"></i>&nbsp;${section1Phone}</h2>
           </div>
           <div class="sectionMessage">
               <p>${section1Message}</p>
           </div>
           <div class="sectionMail">
-            <a href="mailto:${section1Email}">Contact this Pro</a>
+            <a href="mailto:${section1Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
           </div>
           <div class="sectionHours">
             <p>${section1HoursText}</p>
@@ -283,13 +283,13 @@ function getInstallationProList() {
             <div class="sectionHeadingBorder">
             </div>
             <div class="sectionPhone">
-                <h2>${section2Phone}</h2>
+                <h2><i class="fas fa-phone-square"></i>&nbsp;${section2Phone}</h2>
             </div>
             <div class="sectionMessage">
                 <p>${section2Message}</p>
             </div>
             <div class="sectionMail">
-              <a href="mailto:${section2Email}">Contact this Pro</a>
+              <a href="mailto:${section2Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
             </div>
             <div class="sectionHours">
               <p>${section2HoursText}</p>
@@ -311,7 +311,7 @@ function getInstallationProList() {
     var numberOfDealers = dealersListCommercialPros.length;
     
     numberOfDealersParagraph.innerHTML = `
-          ${numberOfDealers} dealers in 28226;
+          ${numberOfDealers} dealers in 28226
     `;
     
       //create divs here
@@ -331,13 +331,13 @@ function getInstallationProList() {
               <div class="sectionHeadingBorder">
               </div>
               <div class="sectionPhone">
-                  <h2>${section0Phone}</h2>
+                  <h2><i class="fas fa-phone-square"></i>&nbsp;${section0Phone}</h2>
               </div>
               <div class="sectionMessage">
                   <p>${section0Message}</p>
               </div>
               <div class="sectionMail">
-                <a href="mailto:${section0Email}">Contact this Pro</a>
+                <a href="mailto:${section0Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
               </div>
               <div class="sectionHours">
                 <p>${section0HoursText}</p>
@@ -364,13 +364,13 @@ function getInstallationProList() {
               <div class="sectionHeadingBorder">
               </div>
               <div class="sectionPhone">
-                  <h2>${section1Phone}</h2>
+                  <h2><i class="fas fa-phone-square"></i>&nbsp;${section1Phone}</h2>
               </div>
               <div class="sectionMessage">
                   <p>${section1Message}</p>
               </div>
               <div class="sectionMail">
-                <a href="mailto:${section1Email}">Contact this Pro</a>
+                <a href="mailto:${section1Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
               </div>
               <div class="sectionHours">
                 <p>${section1HoursText}</p>
@@ -397,13 +397,13 @@ function getInstallationProList() {
               <div class="sectionHeadingBorder">
               </div>
               <div class="sectionPhone">
-                  <h2>${section2Phone}</h2>
+                  <h2><i class="fas fa-phone-square"></i>&nbsp;${section2Phone}</h2>
               </div>
               <div class="sectionMessage">
                   <p>${section2Message}</p>
               </div>
               <div class="sectionMail">
-                <a href="mailto:${section2Email}">Contact this Pro</a>
+                <a href="mailto:${section2Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
               </div>
               <div class="sectionHours">
                 <p>${section2HoursText}</p>
@@ -425,7 +425,7 @@ function getInstallationProList() {
       var numberOfDealers = dealersListResidentialPros.length;
       
       numberOfDealersParagraph.innerHTML = `
-            ${numberOfDealers} dealers in 28226;
+            ${numberOfDealers} dealers in 28226
       `;
 
         //create divs here
@@ -445,13 +445,13 @@ function getInstallationProList() {
                 <div class="sectionHeadingBorder">
                 </div>
                 <div class="sectionPhone">
-                    <h2>${section0Phone}</h2>
+                    <h2><i class="fas fa-phone-square"></i>&nbsp;${section0Phone}</h2>
                 </div>
                 <div class="sectionMessage">
                     <p>${section0Message}</p>
                 </div>
                 <div class="sectionMail">
-                  <a href="mailto:${section0Email}">Contact this Pro</a>
+                  <a href="mailto:${section0Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
                 </div>
                 <div class="sectionHours">
                   <p>${section0HoursText}</p>
@@ -478,13 +478,13 @@ function getInstallationProList() {
                 <div class="sectionHeadingBorder">
                 </div>
                 <div class="sectionPhone">
-                    <h2>${section1Phone}</h2>
+                    <h2><i class="fas fa-phone-square"></i>&nbsp;${section1Phone}</h2>
                 </div>
                 <div class="sectionMessage">
                     <p>${section1Message}</p>
                 </div>
                 <div class="sectionMail">
-                  <a href="mailto:${section1Email}">Contact this Pro</a>
+                  <a href="mailto:${section1Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
                 </div>
                 <div class="sectionHours">
                   <p>${section1HoursText}</p>
@@ -511,13 +511,13 @@ function getInstallationProList() {
                   <div class="sectionHeadingBorder">
                   </div>
                   <div class="sectionPhone">
-                      <h2>${section2Phone}</h2>
+                      <h2><i class="fas fa-phone-square"></i>&nbsp;${section2Phone}</h2>
                   </div>
                   <div class="sectionMessage">
                       <p>${section2Message}</p>
                   </div>
                   <div class="sectionMail">
-                    <a href="mailto:${section2Email}">Contact this Pro</a>
+                    <a href="mailto:${section2Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
                   </div>
                   <div class="sectionHours">
                     <p>${section2HoursText}</p>
@@ -542,7 +542,7 @@ function getInstallationProList() {
         var numberOfDealers = dealersListServicePros.length;
         
         numberOfDealersParagraph.innerHTML = `
-              ${numberOfDealers} dealers in 28226;
+              ${numberOfDealers} dealers in 28226
         `;
 
           //create divs here
@@ -562,13 +562,13 @@ function getInstallationProList() {
                     <div class="sectionHeadingBorder">
                     </div>
                     <div class="sectionPhone">
-                        <h2>${section0Phone}</h2>
+                        <h2><i class="fas fa-phone-square"></i>&nbsp;${section0Phone}</h2>
                     </div>
                     <div class="sectionMessage">
                         <p>${section0Message}</p>
                     </div>
                     <div class="sectionMail">
-                      <a href="mailto:${section0Email}">Contact this Pro</a>
+                      <a href="mailto:${section0Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
                     </div>
                     <div class="sectionHours">
                       <p>${section0HoursText}</p>
@@ -595,13 +595,13 @@ function getInstallationProList() {
                     <div class="sectionHeadingBorder">
                     </div>
                     <div class="sectionPhone">
-                        <h2>${section1Phone}</h2>
+                        <h2><i class="fas fa-phone-square"></i>&nbsp;${section1Phone}</h2>
                     </div>
                     <div class="sectionMessage">
                         <p>${section1Message}</p>
                     </div>
                     <div class="sectionMail">
-                      <a href="mailto:${section1Email}">Contact this Pro</a>
+                      <a href="mailto:${section1Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
                     </div>
                     <div class="sectionHours">
                       <p>${section1HoursText}</p>
@@ -628,13 +628,13 @@ function getInstallationProList() {
                     <div class="sectionHeadingBorder">
                     </div>
                     <div class="sectionPhone">
-                        <h2>${section2Phone}</h2>
+                        <h2><i class="fas fa-phone-square"></i>&nbsp;${section2Phone}</h2>
                     </div>
                     <div class="sectionMessage">
                         <p>${section2Message}</p>
                     </div>
                     <div class="sectionMail">
-                      <a href="mailto:${section2Email}">Contact this Pro</a>
+                      <a href="mailto:${section2Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
                     </div>
                     <div class="sectionHours">
                       <p>${section2HoursText}</p>

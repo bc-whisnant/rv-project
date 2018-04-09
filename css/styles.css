@@ -115,6 +115,11 @@ nav ul li:last-child {
     margin: 0 auto;
 }
 
+.fa-phone-square,
+.fa-envelope {
+    color: #216DDF;
+}
+
 .dealers-list {
     margin-bottom: 10%;
 }
@@ -131,6 +136,7 @@ nav ul li:last-child {
 footer {
     background-color: #083D8C;
     text-align: center;
+    height: 170px;
 }
 
 .footer-logo img {
@@ -140,10 +146,57 @@ footer {
 }
 
 .footer-social-container {
-    width: 40%;
     margin: 0 auto;
 }
 
 .connect {
     float: left;
+    width: 50%;
+    text-align: right;
+}
+
+.connect p {
+    color: white;
+}
+
+.social-icons {
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+
+.social-icons ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1%;
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-youtube {
+    color: #A0B5D5;
+}
+
+.lower-footer {
+    margin: 0 auto;
+    background-color: #216DDF;
+    text-align: center;
+    padding: .125%;
+}
+
+.lower-footer ul li {
+    list-style: none;
+    display: inline-block;
+    color: white;
+}
+
+.lower-footer ul li:nth-child(1)::after,
+.lower-footer ul li:nth-child(2)::after {
+    content: " | "
+}
+
+.lower-footer a,
+.lower-footer a:visited {
+    color: white;
+    text-decoration: none;
 }
