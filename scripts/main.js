@@ -183,11 +183,468 @@ var dealersList = {
   ]
 };
 
-console.log(dealersList.dealers[0]);
-console.log(dealersList);
+// console.log(dealersList.dealers[0]);
+// console.log(dealersList);
 
-// the following code dynamically renders content for the aqua experts section
-var aquaSection = document.querySelector('.aqua');
-aquaSection.querySelector('h2').innerHTML = 'hello there'
+function getInstallationProList() {
+  //this code returns all of the entries that have Service Pro listed
+  var dealersListInstallationPros = dealersList.dealers.filter(function(dealer) {
+    return dealer.data.certifications.indexOf("Installation Pro") > -1
+  });
 
+  //dynamically popular number of dealers in area
+  var numberOfDealersParagraph = document.querySelector('.number-of-dealers');
+  var numberOfDealers = dealersListInstallationPros.length;
+  
+  numberOfDealersParagraph.innerHTML = `
+        ${numberOfDealers} dealers in 28226;
+    `;
+    //create divs here
+    var section0 = document.querySelector('.section0');
+    var section0Heading = dealersListInstallationPros[0].data.name;
+    var section0Phone = dealersListInstallationPros[0].data.phone1;
+    var section0Message = 'Can\'t talk now? Click below to send an email.';
+    var section0Email = dealersListInstallationPros[0].data.email;
+    var section0HoursText = 'Business Hours';
+    var section0Weekdays = dealersListInstallationPros[0].data.weekHours.weekdays;
+    var section0Saturday = dealersListInstallationPros[0].data.weekHours.sat;
+    var section0Sunday = dealersListInstallationPros[0].data.weekHours.sun;
+    section0.innerHTML = `
+
+        <div class="sectionHeading">
+            <h2> ${section0Heading} </h2>
+        </div>
+        <div class="sectionHeadingBorder">
+        </div>
+        <div class="sectionPhone">
+            <h2>${section0Phone}</h2>
+        </div>
+        <div class="sectionMessage">
+            <p>${section0Message}</p>
+        </div>
+        <div class="sectionMail">
+          <a href="mailto:${section0Email}">Contact this Pro</a>
+        </div>
+        <div class="sectionHours">
+          <p>${section0HoursText}</p>
+          <p>Weekdays: ${section0Weekdays}</p>
+          <p>Saturdays: ${section0Saturday}</p>
+          <p>Sundays: ${section0Sunday}</p>
+        </div>
+    `;
+  
+    //generate second div here
+    var section1 = document.querySelector('.section1');
+    var section1Heading = dealersListInstallationPros[1].data.name;
+    var section1Phone = dealersListInstallationPros[1].data.phone1;
+    var section1Message = 'Can\'t talk now? Click below to send an email.';
+    var section1Email = dealersListInstallationPros[1].data.email;
+    var section1HoursText = 'Business Hours';
+    var section1Weekdays = dealersListInstallationPros[1].data.weekHours.weekdays;
+    var section1Saturday = dealersListInstallationPros[1].data.weekHours.sat;
+    var section1Sunday = dealersListInstallationPros[1].data.weekHours.sun;
+    section1.innerHTML = `
+          <div class="sectionHeading">
+              <h2> ${section1Heading} </h2>
+          </div>
+          <div class="sectionHeadingBorder">
+          </div>
+          <div class="sectionPhone">
+              <h2>${section1Phone}</h2>
+          </div>
+          <div class="sectionMessage">
+              <p>${section1Message}</p>
+          </div>
+          <div class="sectionMail">
+            <a href="mailto:${section1Email}">Contact this Pro</a>
+          </div>
+          <div class="sectionHours">
+            <p>${section1HoursText}</p>
+            <p>Weekdays: ${section1Weekdays}</p>
+            <p>Saturdays: ${section1Saturday}</p>
+            <p>Sundays: ${section1Sunday}</p>
+          </div>
+    `;
+  
+     //generate third div here
+     var section2 = document.querySelector('.section2');
+     var section2Heading = dealersListInstallationPros[2].data.name;
+     var section2Phone = dealersListInstallationPros[2].data.phone1;
+     var section2Message = 'Can\'t talk now? Click below to send an email.';
+     var section2Email = dealersListInstallationPros[2].data.email;
+     var section2HoursText = 'Business Hours';
+     var section2Weekdays = dealersListInstallationPros[2].data.weekHours.weekdays;
+     var section2Saturday = dealersListInstallationPros[2].data.weekHours.sat;
+     var section2Sunday = dealersListInstallationPros[2].data.weekHours.sun;
+     section2.innerHTML = `
+            <div class="sectionHeading">
+                <h2> ${section2Heading} </h2>
+            </div>
+            <div class="sectionHeadingBorder">
+            </div>
+            <div class="sectionPhone">
+                <h2>${section2Phone}</h2>
+            </div>
+            <div class="sectionMessage">
+                <p>${section2Message}</p>
+            </div>
+            <div class="sectionMail">
+              <a href="mailto:${section2Email}">Contact this Pro</a>
+            </div>
+            <div class="sectionHours">
+              <p>${section2HoursText}</p>
+              <p>Weekdays: ${section2Weekdays}</p>
+              <p>Saturdays: ${section2Saturday}</p>
+              <p>Sundays: ${section2Sunday}</p>
+            </div>
+     `;
+  }
+
+  function getCommercialProList() {
+    //this code returns all of the entries that have Service Pro listed
+    var dealersListCommercialPros = dealersList.dealers.filter(function(dealer) {
+      return dealer.data.certifications.indexOf("Commercial Pro") > -1
+    });
+
+    //dynamically popular number of dealers in area
+    var numberOfDealersParagraph = document.querySelector('.number-of-dealers');
+    var numberOfDealers = dealersListCommercialPros.length;
+    
+    numberOfDealersParagraph.innerHTML = `
+          ${numberOfDealers} dealers in 28226;
+    `;
+    
+      //create divs here
+      var section0 = document.querySelector('.section0');
+      var section0Heading = dealersListCommercialPros[0].data.name;
+      var section0Phone = dealersListCommercialPros[0].data.phone1;
+      var section0Message = 'Can\'t talk now? Click below to send an email.';
+      var section0Email = dealersListCommercialPros[0].data.email;
+      var section0HoursText = 'Business Hours';
+      var section0Weekdays = dealersListCommercialPros[0].data.weekHours.weekdays;
+      var section0Saturday = dealersListCommercialPros[0].data.weekHours.sat;
+      var section0Sunday = dealersListCommercialPros[0].data.weekHours.sun;
+      section0.innerHTML = `
+              <div class="sectionHeading">
+                 <h2> ${section0Heading} </h2>
+              </div>
+              <div class="sectionHeadingBorder">
+              </div>
+              <div class="sectionPhone">
+                  <h2>${section0Phone}</h2>
+              </div>
+              <div class="sectionMessage">
+                  <p>${section0Message}</p>
+              </div>
+              <div class="sectionMail">
+                <a href="mailto:${section0Email}">Contact this Pro</a>
+              </div>
+              <div class="sectionHours">
+                <p>${section0HoursText}</p>
+                <p>Weekdays: ${section0Weekdays}</p>
+                <p>Saturdays: ${section0Saturday}</p>
+                <p>Sundays: ${section0Sunday}</p>
+              </div>
+      `;
+    
+      //generate second div here
+      var section1 = document.querySelector('.section1');
+      var section1Heading = dealersListCommercialPros[1].data.name;
+      var section1Phone = dealersListCommercialPros[1].data.phone1;
+      var section1Message = 'Can\'t talk now? Click below to send an email.';
+      var section1Email = dealersListCommercialPros[1].data.email;
+      var section1HoursText = 'Business Hours';
+      var section1Weekdays = dealersListCommercialPros[1].data.weekHours.weekdays;
+      var section1Saturday = dealersListCommercialPros[1].data.weekHours.sat;
+      var section1Sunday = dealersListCommercialPros[1].data.weekHours.sun;
+      section1.innerHTML = `
+              <div class="sectionHeading">
+                  <h2> ${section1Heading} </h2>
+              </div>
+              <div class="sectionHeadingBorder">
+              </div>
+              <div class="sectionPhone">
+                  <h2>${section1Phone}</h2>
+              </div>
+              <div class="sectionMessage">
+                  <p>${section1Message}</p>
+              </div>
+              <div class="sectionMail">
+                <a href="mailto:${section1Email}">Contact this Pro</a>
+              </div>
+              <div class="sectionHours">
+                <p>${section1HoursText}</p>
+                <p>Weekdays: ${section1Weekdays}</p>
+                <p>Saturdays: ${section1Saturday}</p>
+                <p>Sundays: ${section1Sunday}</p>
+              </div>
+      `;
+    
+       //generate third div here
+       var section2 = document.querySelector('.section2');
+       var section2Heading = dealersListCommercialPros[2].data.name;
+       var section2Phone = dealersListCommercialPros[2].data.phone1;
+       var section2Message = 'Can\'t talk now? Click below to send an email.';
+       var section2Email = dealersListCommercialPros[2].data.email;
+       var section2HoursText = 'Business Hours';
+       var section2Weekdays = dealersListCommercialPros[2].data.weekHours.weekdays;
+       var section2Saturday = dealersListCommercialPros[2].data.weekHours.sat;
+       var section2Sunday = dealersListCommercialPros[2].data.weekHours.sun;
+       section2.innerHTML = `
+              <div class="sectionHeading">
+                <h2> ${section2Heading} </h2>
+              </div>
+              <div class="sectionHeadingBorder">
+              </div>
+              <div class="sectionPhone">
+                  <h2>${section2Phone}</h2>
+              </div>
+              <div class="sectionMessage">
+                  <p>${section2Message}</p>
+              </div>
+              <div class="sectionMail">
+                <a href="mailto:${section2Email}">Contact this Pro</a>
+              </div>
+              <div class="sectionHours">
+                <p>${section2HoursText}</p>
+                <p>Weekdays: ${section2Weekdays}</p>
+                <p>Saturdays: ${section2Saturday}</p>
+                <p>Sundays: ${section2Sunday}</p>
+              </div>
+       `;
+    }
+
+    function getResidentialProList() {
+      //this code returns all of the entries that have Service Pro listed
+      var dealersListResidentialPros = dealersList.dealers.filter(function(dealer) {
+        return dealer.data.certifications.indexOf("Residential Pro") > -1
+      });
+
+      //dynamically popular number of dealers in area
+      var numberOfDealersParagraph = document.querySelector('.number-of-dealers');
+      var numberOfDealers = dealersListResidentialPros.length;
+      
+      numberOfDealersParagraph.innerHTML = `
+            ${numberOfDealers} dealers in 28226;
+      `;
+
+        //create divs here
+        var section0 = document.querySelector('.section0');
+        var section0Heading = dealersListResidentialPros[0].data.name;
+        var section0Phone = dealersListResidentialPros[0].data.phone1;
+        var section0Message = 'Can\'t talk now? Click below to send an email.';
+        var section0Email = dealersListResidentialPros[0].data.email;
+        var section0HoursText = 'Business Hours';
+        var section0Weekdays = dealersListResidentialPros[0].data.weekHours.weekdays;
+        var section0Saturday = dealersListResidentialPros[0].data.weekHours.sat;
+        var section0Sunday = dealersListResidentialPros[0].data.weekHours.sun;
+        section0.innerHTML = `
+                <div class="sectionHeading">
+                    <h2> ${section0Heading} </h2>
+                </div>
+                <div class="sectionHeadingBorder">
+                </div>
+                <div class="sectionPhone">
+                    <h2>${section0Phone}</h2>
+                </div>
+                <div class="sectionMessage">
+                    <p>${section0Message}</p>
+                </div>
+                <div class="sectionMail">
+                  <a href="mailto:${section0Email}">Contact this Pro</a>
+                </div>
+                <div class="sectionHours">
+                  <p>${section0HoursText}</p>
+                  <p>Weekdays: ${section0Weekdays}</p>
+                  <p>Saturdays: ${section0Saturday}</p>
+                  <p>Sundays: ${section0Sunday}</p>
+                </div>
+        `;
+      
+        //generate second div here
+        var section1 = document.querySelector('.section1');
+        var section1Heading = dealersListResidentialPros[1].data.name;
+        var section1Phone = dealersListResidentialPros[1].data.phone1;
+        var section1Message = 'Can\'t talk now? Click below to send an email.';
+        var section1Email = dealersListResidentialPros[1].data.email;
+        var section1HoursText = 'Business Hours';
+        var section1Weekdays = dealersListResidentialPros[1].data.weekHours.weekdays;
+        var section1Saturday = dealersListResidentialPros[1].data.weekHours.sat;
+        var section1Sunday = dealersListResidentialPros[1].data.weekHours.sun;
+        section1.innerHTML = `
+                <div class="sectionHeading">
+                    <h2> ${section1Heading} </h2>
+                </div>
+                <div class="sectionHeadingBorder">
+                </div>
+                <div class="sectionPhone">
+                    <h2>${section1Phone}</h2>
+                </div>
+                <div class="sectionMessage">
+                    <p>${section1Message}</p>
+                </div>
+                <div class="sectionMail">
+                  <a href="mailto:${section1Email}">Contact this Pro</a>
+                </div>
+                <div class="sectionHours">
+                  <p>${section1HoursText}</p>
+                  <p>Weekdays: ${section1Weekdays}</p>
+                  <p>Saturdays: ${section1Saturday}</p>
+                  <p>Sundays: ${section1Sunday}</p>
+                </div>
+        `;
+      
+         //generate third div here
+         var section2 = document.querySelector('.section2');
+         var section2Heading = dealersListResidentialPros[2].data.name;
+         var section2Phone = dealersListResidentialPros[2].data.phone1;
+         var section2Message = 'Can\'t talk now? Click below to send an email.';
+         var section2Email = dealersListResidentialPros[2].data.email;
+         var section2HoursText = 'Business Hours';
+         var section2Weekdays = dealersListResidentialPros[2].data.weekHours.weekdays;
+         var section2Saturday = dealersListResidentialPros[2].data.weekHours.sat;
+         var section2Sunday = dealersListResidentialPros[2].data.weekHours.sun;
+         section2.innerHTML = `
+                  <div class="sectionHeading">
+                      <h2> ${section2Heading} </h2>
+                  </div>
+                  <div class="sectionHeadingBorder">
+                  </div>
+                  <div class="sectionPhone">
+                      <h2>${section2Phone}</h2>
+                  </div>
+                  <div class="sectionMessage">
+                      <p>${section2Message}</p>
+                  </div>
+                  <div class="sectionMail">
+                    <a href="mailto:${section2Email}">Contact this Pro</a>
+                  </div>
+                  <div class="sectionHours">
+                    <p>${section2HoursText}</p>
+                    <p>Weekdays: ${section2Weekdays}</p>
+                    <p>Saturdays: ${section2Saturday}</p>
+                    <p>Sundays: ${section2Sunday}</p>
+                  </div>
+      `}
+
+  
+
+
+
+        function getServiceProList() {
+        //this code returns all of the entries that have Service Pro listed
+        var dealersListServicePros = dealersList.dealers.filter(function(dealer) {
+          return dealer.data.certifications.indexOf("Service Pro") > -1
+        });
+
+        //dynamically popular number of dealers in area
+        var numberOfDealersParagraph = document.querySelector('.number-of-dealers');
+        var numberOfDealers = dealersListServicePros.length;
+        
+        numberOfDealersParagraph.innerHTML = `
+              ${numberOfDealers} dealers in 28226;
+        `;
+
+          //create divs here
+          var section0 = document.querySelector('.section0');
+          var section0Heading = dealersListServicePros[0].data.name;
+          var section0Phone = dealersListServicePros[0].data.phone1;
+          var section0Message = 'Can\'t talk now? Click below to send an email.';
+          var section0Email = dealersListServicePros[0].data.email;
+          var section0HoursText = 'Business Hours';
+          var section0Weekdays = dealersListServicePros[0].data.weekHours.weekdays;
+          var section0Saturday = dealersListServicePros[0].data.weekHours.sat;
+          var section0Sunday = dealersListServicePros[0].data.weekHours.sun;
+          section0.innerHTML = `
+                    <div class="sectionHeading">
+                        <h2> ${section0Heading} </h2>
+                    </div>
+                    <div class="sectionHeadingBorder">
+                    </div>
+                    <div class="sectionPhone">
+                        <h2>${section0Phone}</h2>
+                    </div>
+                    <div class="sectionMessage">
+                        <p>${section0Message}</p>
+                    </div>
+                    <div class="sectionMail">
+                      <a href="mailto:${section0Email}">Contact this Pro</a>
+                    </div>
+                    <div class="sectionHours">
+                      <p>${section0HoursText}</p>
+                      <p>Weekdays: ${section0Weekdays}</p>
+                      <p>Saturdays: ${section0Saturday}</p>
+                      <p>Sundays: ${section0Sunday}</p>
+                    </div>
+          `;
+
+          //generate second div here
+          var section1 = document.querySelector('.section1');
+          var section1Heading = dealersListServicePros[1].data.name;
+          var section1Phone = dealersListServicePros[1].data.phone1;
+          var section1Message = 'Can\'t talk now? Click below to send an email.';
+          var section1Email = dealersListServicePros[1].data.email;
+          var section1HoursText = 'Business Hours';
+          var section1Weekdays = dealersListServicePros[1].data.weekHours.weekdays;
+          var section1Saturday = dealersListServicePros[1].data.weekHours.sat;
+          var section1Sunday = dealersListServicePros[1].data.weekHours.sun;
+          section1.innerHTML = `
+                    <div class="sectionHeading">
+                        <h2> ${section1Heading} </h2>
+                    </div>
+                    <div class="sectionHeadingBorder">
+                    </div>
+                    <div class="sectionPhone">
+                        <h2>${section1Phone}</h2>
+                    </div>
+                    <div class="sectionMessage">
+                        <p>${section1Message}</p>
+                    </div>
+                    <div class="sectionMail">
+                      <a href="mailto:${section1Email}">Contact this Pro</a>
+                    </div>
+                    <div class="sectionHours">
+                      <p>${section1HoursText}</p>
+                      <p>Weekdays: ${section1Weekdays}</p>
+                      <p>Saturdays: ${section1Saturday}</p>
+                      <p>Sundays: ${section1Sunday}</p>
+                    </div>
+          `;
+
+          //generate third div here
+          var section2 = document.querySelector('.section2');
+          var section2Heading = dealersListServicePros[2].data.name;
+          var section2Phone = dealersListServicePros[2].data.phone1;
+          var section2Message = 'Can\'t talk now? Click below to send an email.';
+          var section2Email = dealersListServicePros[2].data.email;
+          var section2HoursText = 'Business Hours';
+          var section2Weekdays = dealersListServicePros[2].data.weekHours.weekdays;
+          var section2Saturday = dealersListServicePros[2].data.weekHours.sat;
+          var section2Sunday = dealersListServicePros[2].data.weekHours.sun;
+          section2.innerHTML = `
+                    <div class="sectionHeading">
+                        <h2> ${section2Heading} </h2>
+                    </div>
+                    <div class="sectionHeadingBorder">
+                    </div>
+                    <div class="sectionPhone">
+                        <h2>${section2Phone}</h2>
+                    </div>
+                    <div class="sectionMessage">
+                        <p>${section2Message}</p>
+                    </div>
+                    <div class="sectionMail">
+                      <a href="mailto:${section2Email}">Contact this Pro</a>
+                    </div>
+                    <div class="sectionHours">
+                      <p>${section2HoursText}</p>
+                      <p>Weekdays: ${section2Weekdays}</p>
+                      <p>Saturdays: ${section2Saturday}</p>
+                      <p>Sundays: ${section2Sunday}</p>
+                    </div>
+          `;
+        }
+
+// sets the default content to be loaded with service pro to be selected and populated
+getServiceProList();
 

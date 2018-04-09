@@ -35,49 +35,67 @@
         </nav>
     </section>
 
-    <section>
+    <section class="top-banner">
         <img src="rv-images/water-image.png" alt="Banner">
     </section>
-<!--
-    <main>
-            <section class="aqua">
-                <h2></h2>
-                <a class="phone" href=""></a>
-                <a>Can't talk now? Click below to send an email</a>
-                <button><img src="" alt="">Contact this Pro</button>
-                <p>Business Hours</p>
-                <p class="hours-weekdays"></p>
-                <p class="hours-saturdays"></p>
-                <p class="hours-sundays"></p>
+    <main class="dealer-container">
+            <section class="dealers-filter">
+                    <p class="number-of-dealers"></p>
+                    <p>Filter Results</p>
 
-                <ul>
-                    <li></li>
-                </ul>
+                    <label for="accessible">
+                        <input type="checkbox" value="service" name="service" id="service" checked onclick="getServiceProList()"> Service
+                      </label>
+                   
+                      <label for="installation">
+                        <input type="checkbox" value="installation" name="installation" id="installation" onclick="getInstallationProList()"> Installation
+                      </label>
 
-            </section>
+                      <label for="residential">
+                        <input type="checkbox" value="residential" name="residential" id="residential" onclick="getResidentialProList()"> Residential
+                      </label>
 
-            <section class="premium">
-
-            </section>
-
-            <section class="carolina">
-
-            </section>
-
+                      <label for="commercial">
+                        <input type="checkbox" value="commercial" name="commercial" id="commercial" onclick="getCommercialProList()"> Commercial
+                      </label>
+                    
+                </section>
+            
+                <section class="dealers-list">
+                        <section class="section0">
+            
+                        </section>
+            
+                        <section class="section1">
+            
+                        </section>
+            
+                        <section class="section2">
+            
+                        </section>
+                </section>
     </main>
-
     <footer>
-        bottom section goes here
-        <img src="images/" alt=""> 
-        <ul>
-            <li>CONNECT WITH US</li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </footer> -->
+        <section class="footer-logo">
+                <img src="rv-images/pool-pros-logo-footer.png" alt="Pool Pros"> 
+        </section>
+        <section class="footer-social-container">
+            <section class="connect">
+                <p>CONNECT WITH US</p>
+            </section>
+            <section class="social-icons">
+                <ul>
+                    <li><img src="rv-images/twitter-icon.png" alt="Twitter" width="40" height="30"><a href="#"></a></li>
+                    <li><img src="rv-images/facebook-icon.png" alt="Facebook"><a href="#"></a></li>
+                    <li><img src="rv-images/youtube-icon.png" alt="Youtube"><a href="#"></a></li>
+                </ul>
+            </section>
+        </section>
+        
+    </footer>
 
     <script src="scripts/main.js"></script>
     
 </body>
 </html>
+

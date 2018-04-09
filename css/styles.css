@@ -59,3 +59,91 @@ nav ul li:last-child {
     border: 2px solid #216DDF;
     border-radius: 6px;
 }
+
+.top-banner img {
+    width: 100%;
+}
+
+.dealers-filter {
+    margin: 2% auto;
+    width: 90%;
+    padding: 1% 0;
+    text-align: center;
+    background-color: #F6F6F6;
+    border: 1px solid #F6F6F6;
+    border-radius: 5px;
+}
+
+.dealers-filter p {
+    display: inline-block;
+    padding: 0 1%;
+}
+
+.dealers-filter label {
+    padding: 0 1%;
+}
+
+
+.dealers-list {
+    text-align: center;
+}
+
+.section0, 
+.section1, 
+.section2 {
+    margin: 0 1.25%;
+    width: 28%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.sectionHeading {
+    height: 120px;
+}
+
+.sectionHeading h2 {
+    padding: 3%;
+}
+
+.sectionHeadingBorder {
+    border-top: 1px solid lightgray;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.dealers-list {
+    margin-bottom: 10%;
+}
+
+
+.dealers-list a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 2%;
+    border: 1px solid #60D9D8;
+}
+
+footer {
+    background-color: #083D8C;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 3%;
+}
+
+.footer-social-container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.connect {
+    float: left;
+}
