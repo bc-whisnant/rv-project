@@ -18,49 +18,61 @@
             <li>Commerical Service</li>
         </ul>
     </header>
-
     <section class="nav-container">
         <section class="logo">
             <img src="rv-images/pool-pros-logo.png" alt="Pool Pros Logo">
         </section>
+        <section class="mobile-dealer">
+                <i class="fas fa-map-marker-alt"></i>&nbsp;FIND A PRO
+        </section>
         <nav>
+            <section class="mobile-menu-icon" onclick="openMobileMenu()">
+                <img src="rv-images/menu-icon-mobile.png" alt="Mobile Menu">
+            </section>
             <ul>
                 <li>Pools &amp; Spas</li>
                 <li>Supplies</li>
                 <li>Resources</li>
                 <li>Services</li>
-                <li>Find A Pool Pro</li>
-
+                <li class="pool-pro"><i class="fas fa-map-marker-alt"></i>&nbsp;Find a Pool Pro</li>
             </ul>
         </nav>
     </section>
-
+        <section class="mobile-nav-dropdown">
+            <p class="menu-heading">MENU</p>
+            <span class="menu-close" onclick="closeMobileMenu()">X</span>
+            <ul>
+                <li>Pools &amp; Spas</li>
+                <li>Supplies</li>
+                <li>Resources</li>
+                <li>Services</li>
+            </ul>
+    </section>
     <section class="top-banner">
         <img src="rv-images/water-image.png" alt="Banner">
     </section>
     <main class="dealer-container">
         <section class="dealers-filter">
             <p class="number-of-dealers"></p>
-            <p>Filter Results</p>
-
-            <label for="accessible">
-                <input type="checkbox" value="service" name="service" id="service" checked onclick="getServiceProList()"> Service
-            </label>
-
-            <label for="installation">
-                <input type="checkbox" value="installation" name="installation" id="installation" onclick="getInstallationProList()"> Installation
-            </label>
-
-            <label for="residential">
-                <input type="checkbox" value="residential" name="residential" id="residential" onclick="getResidentialProList()"> Residential
-            </label>
-
-            <label for="commercial">
-                <input type="checkbox" value="commercial" name="commercial" id="commercial" onclick="getCommercialProList()"> Commercial
-            </label>
-
+            <p class="filter-text">Filter Results</p>
+            <div class="dealer-label-container">
+                    <label for="service">
+                            <input type="checkbox" value="service" name="service" id="service" checked onclick="getServiceProList()"> Service
+                        </label>
+            
+                        <label for="installation">
+                            <input type="checkbox" value="installation" name="installation" id="installation" onclick="getInstallationProList()"> Installation
+                        </label>
+            
+                        <label for="residential">
+                            <input type="checkbox" value="residential" name="residential" id="residential" onclick="getResidentialProList()"> Residential
+                        </label>
+            
+                        <label for="commercial">
+                            <input type="checkbox" value="commercial" name="commercial" id="commercial" onclick="getCommercialProList()"> Commercial
+                        </label>
+            </div>
         </section>
-
         <section class="dealers-list">
             <section class="section0">
 
@@ -70,9 +82,10 @@
 
             </section>
 
-            <section class="section2">
+            <section class="section2"></section>
 
             </section>
+
         </section>
     </main>
     <footer>
@@ -83,6 +96,7 @@
             <div class="connect">
                 <p>CONNECT WITH US</p>
             </div>
+            
             <div class="social-icons">
                 <ul>
                     <li>
@@ -97,18 +111,63 @@
                 </ul>
             </div>
         </section>
-
     </footer>
     <section class="lower-footer">
+        <div class="mobile-footer">
+            <ul>
+                <li>Dealers and Distributors</li>
+                <li>Commerical Service</li>
+            </ul>
+        </div>
         <ul>
             <li><a href="#">&copy; 2017 Pool Pros</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms and Conditions</a></li>
         </ul>
     </section>
-
+    <section class="contact-modal">
+        <div class="modal">
+            <span class="close-modal" onclick="hideModal()">&times;</span>
+            <div class="modal-header">
+                <p>EMAIL</p>
+                <h2>Title Text Here</h2>
+            </div>
+            <div class="modal-body">
+                <p>Fill out the form below and we will get in touch</p>
+                <div class="modal-form">
+                    <label for="name">First and Last Name</label>
+                    <br>
+                    <input type="input" name="name" id="name" value="">
+                    <br>
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="input" name="phone" id="phone" value="">
+                     <br>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="input" name="email" id="email" value="">
+                    <br>
+                    <label for="comments">Comments or Questions</label>
+                    <br>
+                    <textarea name="comments" id="comments"></textarea>
+                    <br>
+                    <label for="currently">Do you currently own a pool or spa?</label>
+                    <br>
+                    <button class="selected">Yes</button>
+                    <button>No</button>
+                    <br>
+                    <br>
+                    <div class="form-border"></div>
+                    <div class="form-send">
+                        <p>Send My Email&nbsp;<i class="fa fa-angle-right"></i></i></p>
+                    </div>
+                </div>
+                <div class="small-print">
+                    <p>*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ullamcorper tortor. Nullam sed dui risus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="scripts/main.js"></script>
-
 </body>
-
 </html>

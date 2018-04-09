@@ -20,7 +20,7 @@ var dealersList = {
         weekHours: {
           weekdays: "7:00am - 7:00pm",
           sat: "7:00am - 3:00pm",
-          sun: ""
+          sun: "Closed"
         },
         certifications: ["Installation Pro", "Residential Pro", "Service Pro"]
       }
@@ -39,7 +39,7 @@ var dealersList = {
         zipcode: "28205",
         weekHours: {
           weekdays: "7:00am - 7:00pm",
-          sat: "",
+          sat: "Closed",
           sun: "On Call"
         },
         certifications: [
@@ -65,7 +65,7 @@ var dealersList = {
         weekHours: {
           weekdays: "8:00am - 5:00pm",
           sat: "8:00am - 5:00pm",
-          sun: ""
+          sun: "Closed"
         },
         certifications: [
           "Installation Pro",
@@ -88,11 +88,7 @@ var dealersList = {
         country: "US",
         zipcode: "28205",
         weekHours: {
-          mon: "7:00am - 7:00pm",
-          tue: "7:00am - 7:00pm",
-          wed: "7:00am - 7:00pm",
-          thu: "7:00am - 7:00pm",
-          fri: "7:00am - 7:00pm",
+          weekdays: "7:00am - 7:00pm",
           sat: "7:00am - 3:00pm",
           sun: "1:00pm - 5:00pm"
         },
@@ -116,13 +112,9 @@ var dealersList = {
         country: "US",
         zipcode: "28205",
         weekHours: {
-          mon: "7:00am - 7:00pm",
-          tue: "7:00am - 7:00pm",
-          wed: "7:00am - 7:00pm",
-          thu: "7:00am - 7:00pm",
-          fri: "7:00am - 7:00pm",
+          weekdays: "7:00am - 7:00pm",
           sat: "7:00am - 3:00pm",
-          sun: ""
+          sun: "Closed"
         },
         certifications: ["Installation Pro", "Residential Pro"]
       }
@@ -140,11 +132,7 @@ var dealersList = {
         country: "US",
         zipcode: "28205",
         weekHours: {
-          mon: "7:00am - 7:00pm",
-          tue: "7:00am - 7:00pm",
-          wed: "7:00am - 7:00pm",
-          thu: "7:00am - 7:00pm",
-          fri: "7:00am - 7:00pm",
+          weekdays: "7:00am - 7:00pm",
           sat: "7:00am - 3:00pm",
           sun: ""
         },
@@ -169,11 +157,7 @@ var dealersList = {
         country: "US",
         zipcode: "28205",
         weekHours: {
-          mon: "7:00am - 7:00pm",
-          tue: "7:00am - 7:00pm",
-          wed: "7:00am - 7:00pm",
-          thu: "7:00am - 7:00pm",
-          fri: "7:00am - 7:00pm",
+          weekdays: "7:00am - 7:00pm",
           sat: "7:00am - 7:00pm",
           sun: "7:00am - 7:00pm"
         },
@@ -182,9 +166,6 @@ var dealersList = {
     }
   ]
 };
-
-// console.log(dealersList.dealers[0]);
-// console.log(dealersList);
 
 function getInstallationProList() {
   //this code returns all of the entries that have Service Pro listed
@@ -222,8 +203,8 @@ function getInstallationProList() {
         <div class="sectionMessage">
             <p>${section0Message}</p>
         </div>
-        <div class="sectionMail">
-          <a href="mailto:${section0Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+        <div class="sectionMail" onclick="showModal()">
+          <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
         </div>
         <div class="sectionHours">
           <p>${section0HoursText}</p>
@@ -255,8 +236,8 @@ function getInstallationProList() {
           <div class="sectionMessage">
               <p>${section1Message}</p>
           </div>
-          <div class="sectionMail">
-            <a href="mailto:${section1Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+          <div class="sectionMail" onclick="showModal()">
+            <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
           </div>
           <div class="sectionHours">
             <p>${section1HoursText}</p>
@@ -288,8 +269,8 @@ function getInstallationProList() {
             <div class="sectionMessage">
                 <p>${section2Message}</p>
             </div>
-            <div class="sectionMail">
-              <a href="mailto:${section2Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+            <div class="sectionMail" onclick="showModal()">
+              <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
             </div>
             <div class="sectionHours">
               <p>${section2HoursText}</p>
@@ -336,8 +317,8 @@ function getInstallationProList() {
               <div class="sectionMessage">
                   <p>${section0Message}</p>
               </div>
-              <div class="sectionMail">
-                <a href="mailto:${section0Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+              <div class="sectionMail" onclick="showModal()">
+                <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
               </div>
               <div class="sectionHours">
                 <p>${section0HoursText}</p>
@@ -369,8 +350,8 @@ function getInstallationProList() {
               <div class="sectionMessage">
                   <p>${section1Message}</p>
               </div>
-              <div class="sectionMail">
-                <a href="mailto:${section1Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+              <div class="sectionMail" onclick="showModal()">
+                <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
               </div>
               <div class="sectionHours">
                 <p>${section1HoursText}</p>
@@ -402,8 +383,8 @@ function getInstallationProList() {
               <div class="sectionMessage">
                   <p>${section2Message}</p>
               </div>
-              <div class="sectionMail">
-                <a href="mailto:${section2Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+              <div class="sectionMail" onclick="showModal()">
+                <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
               </div>
               <div class="sectionHours">
                 <p>${section2HoursText}</p>
@@ -450,8 +431,8 @@ function getInstallationProList() {
                 <div class="sectionMessage">
                     <p>${section0Message}</p>
                 </div>
-                <div class="sectionMail">
-                  <a href="mailto:${section0Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+                <div class="sectionMail" onclick="showModal()">
+                  <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
                 </div>
                 <div class="sectionHours">
                   <p>${section0HoursText}</p>
@@ -483,8 +464,8 @@ function getInstallationProList() {
                 <div class="sectionMessage">
                     <p>${section1Message}</p>
                 </div>
-                <div class="sectionMail">
-                  <a href="mailto:${section1Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+                <div class="sectionMail" onclick="showModal()">
+                  <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
                 </div>
                 <div class="sectionHours">
                   <p>${section1HoursText}</p>
@@ -516,8 +497,8 @@ function getInstallationProList() {
                   <div class="sectionMessage">
                       <p>${section2Message}</p>
                   </div>
-                  <div class="sectionMail">
-                    <a href="mailto:${section2Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+                  <div class="sectionMail" onclick="showModal()">
+                    <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
                   </div>
                   <div class="sectionHours">
                     <p>${section2HoursText}</p>
@@ -567,8 +548,8 @@ function getInstallationProList() {
                     <div class="sectionMessage">
                         <p>${section0Message}</p>
                     </div>
-                    <div class="sectionMail">
-                      <a href="mailto:${section0Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+                    <div class="sectionMail" onclick="showModal()">
+                      <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
                     </div>
                     <div class="sectionHours">
                       <p>${section0HoursText}</p>
@@ -600,8 +581,8 @@ function getInstallationProList() {
                     <div class="sectionMessage">
                         <p>${section1Message}</p>
                     </div>
-                    <div class="sectionMail">
-                      <a href="mailto:${section1Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+                    <div class="sectionMail" onclick="showModal()">
+                      <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
                     </div>
                     <div class="sectionHours">
                       <p>${section1HoursText}</p>
@@ -633,8 +614,8 @@ function getInstallationProList() {
                     <div class="sectionMessage">
                         <p>${section2Message}</p>
                     </div>
-                    <div class="sectionMail">
-                      <a href="mailto:${section2Email}"><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</a>
+                    <div class="sectionMail" onclick="showModal()">
+                      <p><i class="fas fa-envelope"></i>&nbsp;Contact this Pro</p>
                     </div>
                     <div class="sectionHours">
                       <p>${section2HoursText}</p>
@@ -647,4 +628,32 @@ function getInstallationProList() {
 
 // sets the default content to be loaded with service pro to be selected and populated
 getServiceProList();
+
+// the following code is for displaying and closing the modal
+function showModal() {
+  document.querySelector('.contact-modal').style.display = 'block';
+  console.log('clicked');
+}
+
+function hideModal() {
+  document.querySelector('.close-modal').addEventListener('click', function() {
+    document.querySelector('.contact-modal').style.display = 'none';
+    console.log('clicked')
+  })
+}
+
+//the following code controls the opening and closing of mobile meny
+
+function openMobileMenu() {
+  document.querySelector('.mobile-menu-icon').addEventListener('click', function() {
+    document.querySelector('.mobile-nav-dropdown').style.display = 'block';
+    console.log('clicked');
+  })
+}
+
+function closeMobileMenu() {
+  document.querySelector('.menu-close').addEventListener('click', function() {
+    document.querySelector('.mobile-nav-dropdown').style.display = 'none';
+  })
+}
 

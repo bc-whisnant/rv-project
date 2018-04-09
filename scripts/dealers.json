@@ -20,7 +20,7 @@
         "weekHours": {
           "weekdays": "7:00am - 7:00pm",
           "sat": "7:00am - 3:00pm",
-          "sun": ""
+          "sun": "Closed"
         },
         "certifications": ["Installation Pro", "Residential Pro", "Service Pro"]
       }
@@ -65,7 +65,7 @@
         "weekHours": {
           "weekdays": "8:00am - 5:00pm",
           "sat": "8:00am - 5:00pm",
-          "sun": ""
+          "sun": "Closed"
         },
         "certifications": [
           "Installation Pro",
@@ -88,11 +88,7 @@
         "country": "US",
         "zipcode": "28205",
         "weekHours": {
-          "mon": "7:00am - 7:00pm",
-          "tue": "7:00am - 7:00pm",
-          "wed": "7:00am - 7:00pm",
-          "thu": "7:00am - 7:00pm",
-          "fri": "7:00am - 7:00pm",
+          "weekdays": "7:00am - 7:00pm",
           "sat": "7:00am - 3:00pm",
           "sun": "1:00pm - 5:00pm"
         },
@@ -116,11 +112,7 @@
         "country": "US",
         "zipcode": "28205",
         "weekHours": {
-          "mon": "7:00am - 7:00pm",
-          "tue": "7:00am - 7:00pm",
-          "wed": "7:00am - 7:00pm",
-          "thu": "7:00am - 7:00pm",
-          "fri": "7:00am - 7:00pm",
+          "weekdays": "7:00am - 7:00pm",
           "sat": "7:00am - 3:00pm",
           "sun": ""
         },
@@ -142,13 +134,9 @@
         "country": "US",
         "zipcode": "28205",
         "weekHours": {
-          "mon": "7:00am - 7:00pm",
-          "tue": "7:00am - 7:00pm",
-          "wed": "7:00am - 7:00pm",
-          "thu": "7:00am - 7:00pm",
-          "fri": "7:00am - 7:00pm",
+          "weekdays": "7:00am - 7:00pm",
           "sat": "7:00am - 3:00pm",
-          "sun": ""
+          "sun": "Closed"
         },
         "certifications": [
           "Installation Pro",
@@ -171,11 +159,7 @@
         "country": "US",
         "zipcode": "28205",
         "weekHours": {
-          "mon": "7:00am - 7:00pm",
-          "tue": "7:00am - 7:00pm",
-          "wed": "7:00am - 7:00pm",
-          "thu": "7:00am - 7:00pm",
-          "fri": "7:00am - 7:00pm",
+          "weekdays": "7:00am - 7:00pm",
           "sat": "7:00am - 7:00pm",
           "sun": "7:00am - 7:00pm"
         },
