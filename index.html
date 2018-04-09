@@ -8,14 +8,19 @@
     <title>Red Ventures Project</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <ul>
-            <li>Dealers and Distributors</li>
-            <li>Commerical Service</li>
+            <li>
+                <a href="#">Dealers and Distributors</a>
+            </li>
+            <li>
+                <a href="#">Commerical Service</a>
+            </li>
         </ul>
     </header>
     <section class="nav-container">
@@ -23,30 +28,50 @@
             <img src="rv-images/pool-pros-logo.png" alt="Pool Pros Logo">
         </section>
         <section class="mobile-dealer">
-                <i class="fas fa-map-marker-alt"></i>&nbsp;FIND A PRO
+            <i class="fas fa-map-marker-alt"></i>&nbsp;FIND A PRO
         </section>
         <nav>
             <section class="mobile-menu-icon" onclick="openMobileMenu()">
                 <img src="rv-images/menu-icon-mobile.png" alt="Mobile Menu">
             </section>
             <ul>
-                <li>Pools &amp; Spas</li>
-                <li>Supplies</li>
-                <li>Resources</li>
-                <li>Services</li>
-                <li class="pool-pro"><i class="fas fa-map-marker-alt"></i>&nbsp;Find a Pool Pro</li>
+                <a href="#"></a>
+                <li>
+                    <a href="#">Pools &amp; Spas</a>
+                </li>
+                <li>
+                    <a href="#">Supplies</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li class="pool-pro">
+                    <a href="#">
+                        <i class="fas fa-map-marker-alt"></i>&nbsp;Find a Pool Pro</a>
+                </li>
             </ul>
         </nav>
     </section>
-        <section class="mobile-nav-dropdown">
-            <p class="menu-heading">MENU</p>
-            <span class="menu-close" onclick="closeMobileMenu()">X</span>
-            <ul>
-                <li>Pools &amp; Spas</li>
-                <li>Supplies</li>
-                <li>Resources</li>
-                <li>Services</li>
-            </ul>
+    <section class="mobile-nav-dropdown">
+        <p class="menu-heading">MENU</p>
+        <span class="menu-close" onclick="closeMobileMenu()">X</span>
+        <ul>
+            <li>
+                <a href="#">Pools &amp; Spas</a>
+            </li>
+            <li>
+                <a href="#">Supplies</a>
+            </li>
+            <li>
+                <a href="#">Resources</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+        </ul>
     </section>
     <section class="top-banner">
         <img src="rv-images/water-image.png" alt="Banner">
@@ -56,21 +81,21 @@
             <p class="number-of-dealers"></p>
             <p class="filter-text">Filter Results</p>
             <div class="dealer-label-container">
-                    <label for="service">
-                            <input type="checkbox" value="service" name="service" id="service" checked onclick="getServiceProList()"> Service
-                        </label>
-            
-                        <label for="installation">
-                            <input type="checkbox" value="installation" name="installation" id="installation" onclick="getInstallationProList()"> Installation
-                        </label>
-            
-                        <label for="residential">
-                            <input type="checkbox" value="residential" name="residential" id="residential" onclick="getResidentialProList()"> Residential
-                        </label>
-            
-                        <label for="commercial">
-                            <input type="checkbox" value="commercial" name="commercial" id="commercial" onclick="getCommercialProList()"> Commercial
-                        </label>
+                <label for="service">
+                    <input type="checkbox" value="service" name="service" id="service" checked onclick="getServiceProList()"> Service
+                </label>
+
+                <label for="installation">
+                    <input type="checkbox" value="installation" name="installation" id="installation" onclick="getInstallationProList()"> Installation
+                </label>
+
+                <label for="residential">
+                    <input type="checkbox" value="residential" name="residential" id="residential" onclick="getResidentialProList()"> Residential
+                </label>
+
+                <label for="commercial">
+                    <input type="checkbox" value="commercial" name="commercial" id="commercial" onclick="getCommercialProList()"> Commercial
+                </label>
             </div>
         </section>
         <section class="dealers-list">
@@ -84,7 +109,7 @@
 
             <section class="section2"></section>
 
-            </section>
+        </section>
 
         </section>
     </main>
@@ -96,17 +121,23 @@
             <div class="connect">
                 <p>CONNECT WITH US</p>
             </div>
-            
+
             <div class="social-icons">
                 <ul>
                     <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -115,14 +146,24 @@
     <section class="lower-footer">
         <div class="mobile-footer">
             <ul>
-                <li>Dealers and Distributors</li>
-                <li>Commerical Service</li>
+                <li>
+                    <a href="#">Dealers and Distributors</a>
+                </li>
+                <li>
+                    <a href="#">Commerical Service</a>
+                </li>
             </ul>
         </div>
         <ul>
-            <li><a href="#">&copy; 2017 Pool Pros</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
+            <li>
+                &copy; 2017 Pool Pros
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#">Terms and Conditions</a>
+            </li>
         </ul>
     </section>
     <section class="contact-modal">
@@ -142,7 +183,7 @@
                     <label for="phone">Phone Number</label>
                     <br>
                     <input type="input" name="phone" id="phone" value="">
-                     <br>
+                    <br>
                     <label for="email">Email Address</label>
                     <br>
                     <input type="input" name="email" id="email" value="">
@@ -159,15 +200,20 @@
                     <br>
                     <div class="form-border"></div>
                     <div class="form-send">
-                        <p>Send My Email&nbsp;<i class="fa fa-angle-right"></i></i></p>
+                        <p>Send My Email&nbsp;
+                            <i class="fa fa-angle-right"></i>
+                            </i>
+                        </p>
                     </div>
                 </div>
                 <div class="small-print">
-                    <p>*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ullamcorper tortor. Nullam sed dui risus.</p>
+                    <p>*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ullamcorper tortor. Nullam sed dui
+                        risus.</p>
                 </div>
             </div>
         </div>
     </section>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
