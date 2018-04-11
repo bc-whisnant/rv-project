@@ -107,6 +107,12 @@ nav a:visited {
     padding: 0 1%;
 }
 
+.number-of-dealers {
+    color: #216DDF;
+    border-right: 1px solid gray;
+}
+
+
 .dealers-filter label {
     padding: 0 1%;
 }
@@ -120,9 +126,7 @@ nav a:visited {
     text-align: center;
 }
 
-.section0, 
-.section1, 
-.section2 {
+.dealer-section {
     margin: 0 1.25%;
     width: 28%;
     display: inline-block;
@@ -496,7 +500,7 @@ footer {
 
 @media screen and (max-width: 600px) {
 
-    .section0, .section1, .section2 {
+    .dealer-section {
         margin: 2% auto;
         width: 90%;
     }
